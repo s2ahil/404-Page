@@ -19,6 +19,11 @@ function App() {
   }
   ]
 
+    const handleRedirect = () => {
+  
+    window.location.href = "https://www.codedex.io/"; 
+  };
+  
   return (
     <>
       <div className='flex flex-col h-full justify-center items-center m-4'>
@@ -36,7 +41,7 @@ function App() {
             <div className='text-5xl underline_higlight' >Page not found</div>
 
       
-            <button className="bg-[#FFC900] p-4  border-[1px] border-black  rounded-xl font-bold" id="GoBackButton">Return Back  :)</button>
+            <button className="bg-[#FFC900] p-4  border-[1px] border-black  rounded-xl font-bold" id="GoBackButton"  onClick={handleRedirect}>Return Back  :)</button>
           </div>
 
 
